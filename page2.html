@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head> 
+  
+  <body>
+    <main id="page2">
+      <h2> Advanced Art Work Search </h2>
+
+      <form method="POST"action="http://www.randyconnolly.com/tests/process.php">
+
+        <nav> 
+
+          <input type="search" id="search" name="search" placeholder="Search"></input> 
+
+          <!-- from Fundamentals of Web Development, 3rd Edition.  -->
+          <p> 
+            <label> Subject: </label>
+            <input type="radio" name="subject" value="0" >History </input>
+            <input type="radio" name="subject" value="1" >Person </input>
+            <input type="radio" name="subject" value="2" >Landscape </input>
+          </p>
+
+          <!-- from Fundamentals of Web Development, 3rd Edition.  -->
+          <p>
+            <select name="filter">          
+            <option value="0" >Choose a genre</option>
+            <option value="1" >Baroque</option>
+            <option value="2" >Renaissance</option>
+            <option value="3" >Neo-Classical</option>
+            <option value="4" >Realism</option>
+            </select>
+            </p>
+
+          </nav>
+
+          <section id="tableArea">
+            <h3> Paintings </h3>
+
+            <table>
+              
+              <tr>
+                <th></th>
+                <th>Preview</th>
+                <th>Title</th>
+                <th>Artist</th>
+                <th>Year</th>
+                <th>Genre</th>
+                <th>Actions</th>
+              </tr>
+
+              <tr>
+                <td> <input type="checkbox" id="checkbox1" name="index-1" value="checked 1"></td>
+                <td> <img src="\images\125010.jpg" alt="Alda"> </td>
+                <td>Portrait of Alda Christina Assink</td>
+                <td>Kruseman, Jan</td>
+                <td>1833</td>
+                <td>Realism</td>
+                <td>
+                  <button type="button">
+                    <img src="\images\archive.png" alt="archive">
+                  </button>
+                  <button type="button">
+                    <img src="\images\edit.png" alt="edit">
+                  </button>
+                  <button type="button">
+                    <img src="\images\delete.png" alt="delete">
+                  </button>
+                  <button type="button">
+                    <img src="\images\collection.png" alt="collection">
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td> <input type="checkbox" id="checkbox2" name="index-2" value="checked 2"></td>
+                <td> <img src="\images\125020.jpg" alt="NetherKing"> </td>
+                <td>Portrait of William II, King of the Netherlands</td>
+                <td>Kruseman, Jan</td>
+                <td>1839</td>
+                <td>Realism</td>
+                <td>
+                  <button type="button">
+                    <img src="\images\archive.png" alt="archive">
+                  </button>
+                  <button type="button">
+                    <img src="\images\edit.png" alt="edit">
+                  </button>
+                  <button type="button">
+                    <img src="\images\delete.png" alt="delete">
+                  </button>
+                  <button type="button">
+                    <img src="\images\collection.png" alt="collection">
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td> <input type="checkbox" id="checkbox3" name="index-3" value="checked 3"></td>
+                <td> <img src="\images\130020.jpg" alt="orphan"> </td>
+                <td>Three Girls from the Amsterdam Orphanage</td>
+                <td>Schwartze, Therese</td>
+                <td>1885</td>
+                <td>Realism</td>
+                <td>
+                  <button type="button">
+                    <img src="\images\archive.png" alt="archive">
+                  </button>
+                  <button type="button">
+                    <img src="\images\edit.png" alt="edit">
+                  </button>
+                  <button type="button">
+                    <img src="\images\delete.png" alt="delete">
+                  </button>
+                  <button type="button">
+                    <img src="\images\collection.png" alt="collection">
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td> <input type="checkbox" id="checkbox4" name="index-4" value="checked 4"></td>
+                <td> <img src="\images\127010.jpg" alt="windmill"> </td>
+                <td>The Windmill at Wijk Bij Duurstede</td>
+                <td>Ruisdael, Jacob van</td>
+                <td>1570</td>
+                <td>Dutch Golden Age</td>
+                <td>
+                  <button type="button">
+                    <img src="\images\archive.png" alt="archive">
+                  </button>
+                  <button type="button">
+                    <img src="\images\edit.png" alt="edit">
+                  </button>
+                  <button type="button">
+                    <img src="\images\delete.png" alt="delete">
+                  </button>
+                  <button type="button">
+                    <img src="\images\collection.png" alt="collection">
+                  </button>
+                </td>
+              </tr>
+
+              </table>
+          </section>
+
+          <footer>
+            <p>
+              <select name="Bulk Action">          
+              <option value="0" >Choose a bulk action</option>
+              <option value="1" >Archive</option>
+              <option value="2" >Edit</option>
+              <option value="3" >Delete</option>
+              <option value="4" >Collection</option>
+              </select>
+              </p>
+
+              <button type="button"> Apply To All </button>              
+
+          </footer>
+
+
+      </form>
+     
+    </main>
+  </body>
+
+
+
+</html>

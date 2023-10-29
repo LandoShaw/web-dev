@@ -1,0 +1,290 @@
+
+/* index.html */
+
+/* Large scale behavior */
+main{
+    text-align: center;
+    margin: 0;
+    width: 1100px;
+    padding: 0px;
+    background-color: #E0FCFF;
+    box-shadow: 5px 5px 10px rgba(40, 59, 64, 0.5);
+}
+section{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-size: 36px;
+    margin: 0;
+    padding: 10px;
+    
+}
+
+    /* styles common to multiple or all listBlocks */ 
+.listBlock {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 303px;
+    text-align: center;
+    background-color: white;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0px;
+}
+li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* bolding and upping certain list texts */
+.listBlock ul li:nth-child(1) {
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 25px;
+}
+li {
+    font-weight: 300;
+}
+.boldWord {
+    font-weight: 800;
+  }
+.boldBigWord{
+    font-size: 40px;
+    font-weight: 800;
+}
+/* staggered shading of list items */ 
+.listBlock ul li:nth-child(even){
+    background-color: rgba(47, 69, 64, 0.35); 
+}
+
+/* view form button */
+button {
+    /* padding-top: 25px; */
+    color: white;
+    text-align: center;
+    background-color: #3a6ba5;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 100px;
+    padding-left: 100px;
+    border: 0;
+}
+button:hover {
+    background-color: #27241D;
+    color: white;
+    font-weight: 800;
+}
+
+/* styles specific per block */
+#centerBlock {
+    color: white;
+    background-color: #2F4F4F;
+}
+#leftBlock ul li:nth-child(2){
+    background-color: #5BB189;
+}
+#centerBlock ul li:nth-child(2){
+    background-color: #4B0082;
+}
+#rightBlock ul li:nth-child(2){
+    background-color: #EC632A;
+}
+
+/* Bottom block */
+#bottomBlock{
+    margin-top: 50px;
+    color: white;
+    text-align: left;
+    background-color: #2F4F4F;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+#bottomBlock p{
+    font-weight: 300;
+    margin-top: 0;
+}
+#bottomBlock li {
+    background-image: url('images/checkmark.svg'); 
+    background-size: 24px;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    padding-left: 40px;
+}
+/* link color for readability */
+#bottomBlock li a {
+    color: orangered;
+}
+
+
+
+
+
+    /* for page2.html (mostly arranged in vertically descending order) */
+#page2 {
+    padding: 30px;
+    background-color: white;
+}
+h2{
+    color: white;
+    background-color: var(--color-support-4-900);
+    padding: 5px;
+    /* margin-bottom: 10px; */
+}
+nav{
+    background-color: var(--color-neutral-100);
+   /* width: calc(100% - 30px);  */
+   text-align: left;
+   margin-bottom: 15px;;
+}
+nav > *{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
+/* search box style */
+#search{
+    border: 0px;
+    padding: 10px;
+}
+/* dropdown menus' style */
+select{
+    border: 0px;
+    padding: 10px;
+}
+h3{
+    color: white;
+    background-color: var(--color-support-4-900);
+    padding: 5px;
+    margin: 0px;
+}
+
+
+
+#tableArea{
+    background-color: var(--color-neutral-100);
+    margin: 30px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table tr:nth-child(1){
+    background-color: var(--color-primary-1-100);
+}
+
+table td:nth-child(3){
+    font-style: italic;
+}
+
+td img{
+    max-width: 150px;
+}
+td button{
+    padding: 5px;
+    background-color: var(--color-primary-1-050);
+}
+td button:hover{
+    padding: 5px;
+    background-color: var(--color-primary-1-300);
+}
+
+footer{
+    background-color: var(--color-neutral-100);
+    margin: 30px;
+    text-align: left;
+    padding-left: 10px;
+}
+footer > * {
+    display: inline-block;
+}
+footer button{
+    color: black;
+    padding: 10px;
+    background-color: var(--color-primary-1-050);
+}
+footer button:hover{
+    color: black;
+    background-color: var(--color-primary-1-300);
+}
+
+
+
+
+
+:root {
+    /* Primary: Cyan   */
+    --color-primary-1-050: #E0FCFF;
+    --color-primary-1-100: #BEF8FD;
+    --color-primary-1-200: #87EAF2;
+    --color-primary-1-300: #54D1DB;
+    --color-primary-1-400: #38BEC9;
+    --color-primary-1-500: #2CB1BC;
+    --color-primary-1-600: #14919B;
+    --color-primary-1-700: #0E7C86;
+    --color-primary-1-800: #0A6C74;
+    --color-primary-1-900: #044E54; 
+
+    /* neutral: warm grey */
+    --color-neutral-050: #FAF9F7;
+    --color-neutral-100: #E8E6E1;
+    --color-neutral-200: #D3CEC4;
+    --color-neutral-300: #B8B2A7;
+    --color-neutral-400: #A39E93;
+    --color-neutral-500: #857F72;
+    --color-neutral-600: #625D52;
+    --color-neutral-700: #504A40;
+    --color-neutral-800: #423D33;
+    --color-neutral-900: #27241D;
+
+    /* Supporting: Blue, Red, yellow, teal  */
+    --color-support-1-050: #DCEEFB;
+    --color-support-1-100: #B6E0FE;
+    --color-support-1-200: #84C5F4;
+    --color-support-1-300: #62B0E8;
+    --color-support-1-400: #4098D7;
+    --color-support-1-500: #2680C2;
+    --color-support-1-600: #186FAF;
+    --color-support-1-700: #0F609B;
+    --color-support-1-800: #0A558C;
+    --color-support-1-900: #003E6B;          
+ 
+    --color-support-2-050: #FFEEEE;
+    --color-support-2-100: #FACDCD;
+    --color-support-2-200: #F29B9B;
+    --color-support-2-300: #E66A6A;
+    --color-support-2-400: #D64545;
+    --color-support-2-500: #BA2525;
+    --color-support-2-600: #A61B1B;
+    --color-support-2-700: #911111;
+    --color-support-2-800: #780A0A;
+    --color-support-2-900: #610404;    
+    
+    --color-support-3-050: #FFFAEB;
+    --color-support-3-100: #FCEFC7;
+    --color-support-3-200: #F8E3A3;
+    --color-support-3-300: #F9DA8B;
+    --color-support-3-400: #F7D070;
+    --color-support-3-500: #E9B949;
+    --color-support-3-600: #C99A2E;
+    --color-support-3-700: #A27C1A;
+    --color-support-3-800: #7C5E10;
+    --color-support-3-900: #513C06;     
+ 
+    --color-support-4-050: #EFFCF6;
+    --color-support-4-100: #C6F7E2;
+    --color-support-4-200: #8EEDC7;
+    --color-support-4-300: #65D6AD;
+    --color-support-4-400: #3EBD93;
+    --color-support-4-500: #27AB83;
+    --color-support-4-600: #199473;
+    --color-support-4-700: #147D64;
+    --color-support-4-800: #0C6B58;
+    --color-support-4-900: #014D40;          
+ }
